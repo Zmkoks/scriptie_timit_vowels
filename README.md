@@ -1,10 +1,15 @@
-In 'information.py' is the location of the:\n
-===> directories needed: tmit_path, data_path, output_path \n
-===> name of the model/attempt \n
-===> list of information: \n
-    - phones, vowels, 'all_info' \n
-===> to reduce phones/group phones: group_phones, reduce_groups \n
-===> multiple dictionaries that change the following: \n
+In 'information.py' is the location of the:
+
+===> directories needed: tmit_path, data_path, output_path 
+
+===> name of the model/attempt 
+
+===> list of information:
+    - phones, vowels, 'all_info'
+    
+===> to reduce phones/group phones: group_phones, reduce_groups
+
+===> multiple dictionaries that change the following:
     - MFCC: n_mels, hoplength, framelength \n
     - Design: delete_dialects, delete_gender, 'selection of phones in input and output', \n
     - input classifiers: select frames, delta, double delta \n
