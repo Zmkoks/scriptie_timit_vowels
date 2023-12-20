@@ -1,27 +1,24 @@
 In 'information.py' is the location of the:
 
-===> directories needed: tmit_path, data_path, output_path 
-
-===> name of the model/attempt 
-
-===> list of information:
++ ===> directories needed: tmit_path, data_path, output_path
++ ===> name of the model/attempt
++ ===> list of information:
     - phones, vowels, 'all_info'
-    
-===> to reduce phones/group phones: group_phones, reduce_groups
-
-===> multiple dictionaries that change the following:
++ ===> to reduce phones/group phones: group_phones, reduce_groups
++ ===> multiple dictionaries that change the following:
     - MFCC: n_mels, hoplength, framelength \n
-    - Design: delete_dialects, delete_gender, 'selection of phones in input and output', \n
-    - input classifiers: select frames, delta, double delta \n
-    - network: classes to classify (dialects, gender, phones), layers, batch size, epoch \n
+    - Design: delete_dialects, delete_gender, 'selection of phones in input and output', 
+    - input classifiers: select frames, delta, double delta 
+    - network: classes to classify (dialects, gender, phones), layers, batch size, epoch 
 
 ############################################################################### \n
-paths: tmit_path(string): "home/user/Documents/timit"
-       data_path(string): "home/user/Documents/research/data"
-       output_path(string): "home/user/research/output"
+paths: 
+- tmit_path(string): "home/user/Documents/timit"
+- data_path(string): "home/user/Documents/research/data"
+- output_path(string): "home/user/research/output"
 
 ############################################################################### \n
-===> tmit_path \n
+===> tmit_path
 timit files: this assumes that in this directory is a TEST and a TRAIN directory, in which
 both PHN and WAV files are located (unseperated)
 so, the location of timit_dir/TEST should have DR1FAKS0SA1.PHN and DR1FAKS0SA1.wav
