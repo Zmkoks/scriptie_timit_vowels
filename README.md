@@ -61,30 +61,30 @@ grouped. This is a way you can do that. Set 'reduce_groups = True')
 The models can be varied as followed / the different features:
 ###############################################################################
 + > MFCC:
-        -  n_mels (int) = number of bands of the mfcc
-        -  hoplength(int) = hoplength in frames, in timit, this is 1/16 ms, so hoplength of 160 = 10 ms
-        - framelength(int) = framelength in frames
+- n_mels (int) = number of bands of the mfcc
+- hoplength(int) = hoplength in frames, in timit, this is 1/16 ms, so hoplength of 160 = 10 ms
+- framelength(int) = framelength in frames
 ###############################################################################
 In mfcc_to_df.py is the script to create a dataframe with meta information and mfccs from the
 wav files in timit. The width depends on n_mels.
 It is structured as follows:
-  -   ### dataframe with each row:
-   -  ### column 0 = dialect
-   -  ### column 1 = gender
-   - ### column 2 = speaker ID
-   - ### column 3 = sentence type
-   - ### column 4 = sentence number
-   - ### column 6 = phone
-   - ### column 7 = frame in wav file
-   - ### column 8: = mfcc, width depending on n_mels
+- ### dataframe with each row:
+- ### column 0 = dialect
+- ### column 1 = gender
+-  ### column 2 = speaker ID
+-  ### column 3 = sentence type
+-  ### column 4 = sentence number
+-  ### column 6 = phone
+-  ### column 7 = frame in wav file
+-  ### column 8: = mfcc, width depending on n_mels
 
 All of these variables are directly inserted into the librosa.mfcc.
 
 ###############################################################################
 + - > input classifiers:
-                      delta(bool) = add delta
-                      double_delta(bool) = add double_delta
-                      select_frames(None, bool, int, list) = selects middle frame(s)
+    > delta(bool) = add delta
+    >  double_delta(bool) = add double_delta
+    > select_frames(None, bool, int, list) = selects middle frame(s)
 ###############################################################################
 In input_classifiers.py, there are functions to transform the data:
 if we take frame x, then delta adds columns with the mfcc data from (x+1)-(x-1), call this d
